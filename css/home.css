@@ -142,11 +142,10 @@ nav.mainnav a:hover::after{width:100%;}
 
 /* INGRESSOS */
 #ingressos{background:var(--gray);clip-path:polygon(0 40px,100% 0,100% 100%,0 100%);margin-top:-40px;padding-top:130px;}
-.tickets{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:36px;}
+.tickets{display:grid;grid-template-columns:1fr;gap:24px;margin-top:36px;max-width:640px;}
 .ticket-card{background:var(--black);border:2px solid var(--yellow);border-radius:12px;padding:32px 28px;display:flex;flex-direction:column;}
 .ticket-card.soon{border-color:#5a5a58;}
 .ticket-card .tk-tag{align-self:flex-start;background:var(--yellow);color:var(--black);font-family:'Anton',sans-serif;font-size:13px;padding:6px 14px;border-radius:20px;letter-spacing:1px;margin-bottom:16px;}
-.ticket-card.soon .tk-tag{background:#5a5a58;color:var(--white);}
 .ticket-card h3{font-size:28px;margin-bottom:10px;}
 .ticket-card p{color:#d3d3d1;font-size:17px;flex-grow:1;}
 .ticket-price{font-family:'Anton',sans-serif;font-size:34px;color:var(--yellow);margin:14px 0 6px;line-height:1.1;}
@@ -164,12 +163,12 @@ nav.mainnav a:hover::after{width:100%;}
 .map-fallback p{color:#d3d3d1;font-size:16px;}
 .map-frame.failed iframe{display:none;}
 
-/* PROXIMA ETAPA */
+/* RESUMO ETAPA 1 */
 #proxima{background:var(--gray);clip-path:polygon(0 40px,100% 0,100% 100%,0 100%);margin-top:-40px;padding:130px 0 90px;}
-.next-card{background:var(--black);border-radius:12px;padding:36px 32px;display:flex;gap:28px;align-items:center;flex-wrap:wrap;margin-top:26px;border-left:5px solid var(--yellow);}
-.next-card .nx-date{font-family:'Anton',sans-serif;font-size:44px;color:var(--yellow);line-height:1;}
-.next-card .nx-info h3{font-size:24px;margin-bottom:6px;}
-.next-card .nx-info p{color:#d3d3d1;font-size:17px;}
+.recap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:32px;}
+.recap-card{background:var(--black);border-radius:10px;padding:26px 22px;border-left:4px solid var(--yellow);}
+.recap-num{font-family:'Anton',sans-serif;font-size:clamp(32px,4vw,46px);color:var(--yellow);line-height:1;}
+.recap-label{margin-top:8px;font-size:17px;color:#d8d8d6;}
 
 /* INSTAGRAM */
 #insta{background:var(--yellow);color:var(--black);text-align:center;padding:90px 0;clip-path:polygon(0 40px,100% 0,100% 100%,0 100%);margin-top:-40px;}
@@ -208,6 +207,7 @@ footer .foot-links a:hover{color:var(--yellow);}
   .burger{display:flex;}
   .prog-grid,.exp-media,.tickets,.local-grid{grid-template-columns:1fr;}
   .exp-grid{grid-template-columns:1fr 1fr;}
+  .recap-grid{grid-template-columns:1fr 1fr;}
 }
 @media (max-width:640px){
   .section{padding:64px 0;}
@@ -218,5 +218,6 @@ footer .foot-links a:hover{color:var(--yellow);}
   .hero h1{font-size:clamp(26px,7vw,36px);max-width:100%;}
   .hero-actions{flex-direction:column;align-items:stretch;}
   .exp-grid{grid-template-columns:1fr;}
+  .recap-grid{grid-template-columns:1fr;}
   .cat-chip{font-size:15px;padding:8px 14px;}
 }
