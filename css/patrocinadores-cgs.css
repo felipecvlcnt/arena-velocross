@@ -17,3 +17,13 @@
 .etapa-card.active{border:2px solid var(--yellow);}
 @media (max-width:980px){.castro-layout{grid-template-columns:1fr;}}
 @media (max-width:640px){.castro-stats,.lives{grid-template-columns:1fr;}.castro-stats .wide{grid-column:auto;}}
+
+/* LOGOS */
+.header-logo img{height:76px;}
+header.scrolled .header-logo img{height:56px;}
+footer img{height:80px;}
+@media (max-width:640px){
+.header-logo img{height:60px;}
+header.scrolled .header-logo img{height:48px;}
+footer img{height:64px;}
+}

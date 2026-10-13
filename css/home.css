@@ -54,8 +54,8 @@ a{color:inherit;text-decoration:none;}
 header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 0;transition:background .3s ease, padding .3s ease;}
 header.scrolled{background:rgba(29,29,27,.96);backdrop-filter:blur(6px);padding:10px 0;box-shadow:0 4px 20px rgba(0,0,0,.4);}
 .header-inner{display:flex;align-items:center;justify-content:space-between;}
-.header-logo img{height:52px;width:auto;transition:height .3s ease;}
-header.scrolled .header-logo img{height:40px;}
+.header-logo img{height:76px;width:auto;transition:height .3s ease;}
+header.scrolled .header-logo img{height:56px;}
 nav.mainnav{display:flex;gap:26px;align-items:center;}
 nav.mainnav a{font-weight:600;font-size:17px;text-transform:uppercase;letter-spacing:.5px;position:relative;padding:4px 0;}
 nav.mainnav a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--yellow);transition:width .2s ease;}
@@ -177,7 +177,7 @@ nav.mainnav a:hover::after{width:100%;}
 
 /* FAQ */
 #faq{background:var(--black);padding:90px 0;}
-.faq-list{margin-top:32px;max-width:900px;}
+.faq-list{margin-top:32px;}
 .faq-item{border-bottom:1px solid #3c3c3a;}
 .faq-q{
   width:100%;background:none;border:none;color:var(--white);cursor:pointer;text-align:left;
@@ -192,7 +192,7 @@ nav.mainnav a:hover::after{width:100%;}
 .faq-a a{color:var(--yellow);font-weight:700;}
 
 footer{background:var(--black);padding:44px 0;text-align:center;color:#8f8f8d;font-size:15px;border-top:1px solid #2c2c2a;}
-footer img{height:40px;margin:0 auto 16px;}
+footer img{height:80px;margin:0 auto 16px;}
 footer .foot-links{display:flex;gap:22px;justify-content:center;margin-bottom:16px;flex-wrap:wrap;}
 footer .foot-links a{font-weight:600;color:#c9c9c7;}
 footer .foot-links a:hover{color:var(--yellow);}
@@ -220,4 +220,7 @@ footer .foot-links a:hover{color:var(--yellow);}
   .exp-grid{grid-template-columns:1fr;}
   .recap-grid{grid-template-columns:1fr;}
   .cat-chip{font-size:15px;padding:8px 14px;}
+  .header-logo img{height:60px;}
+  header.scrolled .header-logo img{height:48px;}
+  footer img{height:64px;}
 }
