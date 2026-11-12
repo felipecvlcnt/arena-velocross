@@ -142,13 +142,15 @@ nav.mainnav a:hover::after{width:100%;}
 
 /* INGRESSOS */
 #ingressos{background:var(--gray);clip-path:polygon(0 40px,100% 0,100% 100%,0 100%);margin-top:-40px;padding-top:130px;}
-.tickets{display:grid;grid-template-columns:1fr;gap:24px;margin-top:36px;max-width:640px;}
+.tickets{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:36px;max-width:980px;}
 .ticket-card{background:var(--black);border:2px solid var(--yellow);border-radius:12px;padding:32px 28px;display:flex;flex-direction:column;}
 .ticket-card.soon{border-color:#5a5a58;}
 .ticket-card .tk-tag{align-self:flex-start;background:var(--yellow);color:var(--black);font-family:'Anton',sans-serif;font-size:13px;padding:6px 14px;border-radius:20px;letter-spacing:1px;margin-bottom:16px;}
 .ticket-card h3{font-size:28px;margin-bottom:10px;}
 .ticket-card p{color:#d3d3d1;font-size:17px;flex-grow:1;}
 .ticket-price{font-family:'Anton',sans-serif;font-size:34px;color:var(--yellow);margin:14px 0 6px;line-height:1.1;}
+.ticket-card p.tk-sub{flex-grow:0;font-weight:600;color:#fff;margin-bottom:4px;}
+.ticket-card .btn{align-self:flex-start;margin-top:22px;}
 
 /* LOCAL */
 #local{background:var(--black);padding-top:110px;}
